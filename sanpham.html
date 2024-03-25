@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy Tạo Oxy Y Tế Gia Đình</title>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%;
+}
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+header .navbar a:hover{
+    color: var(violet);
+}
+
+ .footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+.footer .box-container .box h3{
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a:hover{
+    color: pink;
+    text-decoration: underline;
+}
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: 1rem solid rgba(0,0,0,.1);
+}
+.footer .credit span{
+    color: blue;
+}
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.products .box-container h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 15px 10px 0px;
+}
+.products .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: 1rem solid rgba(0,0,0,.1);
+    position: relative;
+}
+.products .box-container .box .discount{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: .7rem 1rem ;
+    font-size: 2rem;
+    color: blue;
+    background: rgba(255, 51, 153, .05);
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden
+}
+
+.products .box-container .box .image img{
+    height: 25rem;
+
+}
+
+.products .box-container .box:hover .image img{
+    transform: scale(1.1);
+    
+}
+.products .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+} 
+.products .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+.products .box-container .box .content .price{
+    font-size: 2.5rem;
+    color: blue;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+.products .box-container .box .content button{
+    background-color: #747373;
+    color: #fff;
+    border: 1px solid gainsboro;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+}
+ 
+</style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Thiết Bị Y Tế</a>
+
+        <nav class="navbar">
+            <a href="#trangchu">Trang Chủ</a>
+            <a href="#sanpham">Sản Phẩm</a>
+            <a href="#gioithieu">Giới Thiệu</a>
+            <a href="#lienhe">Liên Hệ</a>
+            <a href="dangnhapdangki.html">Đăng Nhập / Đăng Ký</a>
+        </nav>
+    </header>
+    <br><br><br>
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="images/3.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Máy tạo Oxy Yuyue 7F-3</h3>
+                        <div class="price">Giá: 5.890.000 VNĐ</div>
+                        <button>Mua ngay</button>
+                    </div>
+            
+            </div>
+            <div class="box">
+                <span class="discount">-20%</span>
+                    <div class="image">
+                        <img src="images/11.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Máy tạo oxy 3 lít Yuwell (Yuyue) 9F-3</h3>
+                        <div class="price">Giá: 7.800.000 VNĐ</div>
+                        <button>Mua ngay</button>
+                    </div>
+            
+            </div>
+            <div class="box">
+                <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="images/12.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Máy tạo oxy 3 lít 7F-3E Yuwell (Yuyue)</h3>
+                        <div class="price">Giá: 6.999.000 VNĐ</div>
+                        <button>Mua ngay</button>
+                    </div>
+            
+            </div>
+            <div class="box">
+                <span class="discount">-15%</span>
+                    <div class="image">
+                        <img src="images/13.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Máy tạo oxy 3 lít JAY-3BW</h3>
+                        <div class="price">Giá: 6.750.000 VNĐ</div>
+                        <button>Mua ngay</button>
+                    </div>
+            
+            </div>
+            <div class="box">
+                <span class="discount">0%</span>
+                    <div class="image">
+                        <img src="images/14.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>MÁY TẠO OXY IMEDICARE IOC – 03N</h3>
+                        <div class="price">Giá: 7.900.000 VNĐ</div>
+                        <button>Mua ngay</button>
+                    </div>
+            
+            </div>
+            <div class="box">
+                <span class="discount">20%</span>
+                <div class="image">
+                    <img src="images/1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Máy tạo oxy di động 5 lít JAY-5J</h3>
+                    <div class="price">Giá: 8.600.000 VNĐ</div>
+                    <button>Mua ngay</button>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-30%</span>
+                    <div class="image">
+                        <img src="images/25.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Que thử Acid Uric - Phụ kiện máy đo đường huyết Benecheck Plus (25 que)</h3>
+                        <div class="price">Giá: 360.000 VNĐ</div>
+                        <button>Mua ngay</button>
+                    </div>
+            
+            </div>
+            <div class="box">
+                <span class="discount">-20%</span>
+                    <div class="image">
+                        <img src="images/24.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Que thử của máy đo đường huyết Medisana Meditouch 2 (50 que)</h3>
+                        <div class="price">Giá: 499.000 VNĐ</div>
+                        <button>Mua ngay</button>
+                    </div>
+            
+            </div>
+            <div class="box">
+                <span class="discount">-15%</span>
+                    <div class="image">
+                        <img src="images/23.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Que thử của máy đo đường huyết MediSmart Sapphire (hộp 25 que)</h3>
+                        <div class="price">Giá: 210.000 VNĐ</div>
+                        <button>Mua ngay</button>
+                    </div>
+            
+            </div>
+            <div class="box">
+                <span class="discount">-25%</span>
+                    <div class="image">
+                        <img src="images/22.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Que thử của máy đo đường huyết On Call Plus (hộp 25 que)</h3>
+                        <div class="price">Giá: 140.000 VNĐ</div>
+                        <button>Mua ngay</button>
+                    </div>
+            
+            </div>
+            <div class="box">
+                <span class="discount">10%</span>
+                    <div class="image">
+                        <img src="images/21.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Máy đo đường huyết Acon On-Call Redi</h3>
+                        <div class="price">Giá: 279.000 VNĐ</div>
+                        <button>Mua ngay</button>
+                    </div>
+            
+            </div>
+            <div class="box">
+                <span class="discount">20%</span>
+                <div class="image">
+                    <img src="images/20.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Máy đo đường huyết On Call EZ II</h3>
+                    <div class="price">Giá: 349.000 VNĐ</div>
+                    <button>Mua ngay</button>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="images/26.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Máy đo huyết áp cổ tay HEM-6131</h3>
+                        <div class="price">Giá: 799.000 VNĐ</div>
+                        <button>Mua ngay</button>
+                    </div>
+            
+            </div>
+            <div class="box">
+                <span class="discount">-20%</span>
+                    <div class="image">
+                        <img src="images/27.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>>Máy đo huyết áp bắp tay tự động Omron HEM-7121</h3>
+                        <div class="price">Giá: 999.000 VNĐ</div>
+                        <button>Mua ngay</button>
+                    </div>
+            
+            </div>
+            <div class="box">
+                <span class="discount">-10%</span>
+                    <div class="image">
+                        <img src="images/28.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Máy đo huyết áp bắp tay tự động HEM-7322</h3>
+                        <div class="price">Giá: 1.999.000 VNĐ</div>
+                        <button>Mua ngay</button>
+                    </div>
+            
+            </div>
+            <div class="box">
+                <span class="discount">-15%</span>
+                    <div class="image">
+                        <img src="images/29.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Máy đo huyết áp bắp tay tự động HEM-7320</h3>
+                        <div class="price">Giá: 2.290.000 VNĐ</div>
+                        <button>Mua ngay</button>
+                    </div>
+            
+            </div>
+            <div class="box">
+                <span class="discount">5%</span>
+                    <div class="image">
+                        <img src="images/30.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Máy đo huyết áp bắp tay JPN1</h3>
+                        <div class="price">Giá: 500.000 VNĐ</div>
+                        <button>Mua ngay</button>
+                    </div>
+            
+            </div>
+            <div class="box">
+                <span class="discount">10%</span>
+                <div class="image">
+                    <img src="images/31.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Máy đo huyết áp cổ tay HEM-6121</h3>
+                    <div class="price">Giá: 650.000 VNĐ</div>
+                    <button>Mua ngay</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Đường Dẫn</h3>
+                <a href="#">Trang Chủ</a>
+                <a href="#">Sản Phẩm</a>
+                <a href="#">Giới Thiệu</a>
+                <a href="#">Liên Hệ</a>
+                <a href="#">Đăng Nhập / Đăng Ký</a>
+            </div>
+            <div class="box">
+                <h3>Liên Hệ</h3>
+                <a href="#">SĐT : 037-552-5782</a>
+                <a href="#">thuonglethi1712005@gmail.com</a>
+                <a href="#">Yen Hưng - Yên Mô - Ninh Bình</a>
+            </div>
+        </div>
+        <div class="credit">By : Le Thi Thuong <span>Dai Hoc Dai Nam</span>| Lien He Voi Chung Toi</div>
+    </section>
+</body>
+</html>

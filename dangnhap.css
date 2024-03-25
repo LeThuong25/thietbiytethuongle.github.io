@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(23, 22, 24);
+}
+form{
+    border: 1px dashed black;
+    width: fit-content;
+    margin-left: 35%;
+    padding: 20px;
+}
+.form-label{
+    width: 150px;
+    display: inline-block;
+    color: black;
+    font-size: bold;
+}
+.form-input{
+    background-color: rgb(203, 193, 193);
+    color: white;
+    height: 30px;
+    width: 200px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    padding: 0px 10px;
+}
+button{
+    width: 140px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+}
+#login{
+    background-color: rgb(119, 119, 119);
+    color: aliceblue;
+    margin-left: 150px;
+}
+#forget{
+    background-color: rgb(119, 119, 119);
+    color: aliceblue;
+    align-content: center;
+}
+input :checked{
+    outline: 2px solid palevioletred;
+}
